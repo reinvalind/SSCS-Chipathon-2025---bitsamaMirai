@@ -5,6 +5,25 @@
 In our project we are going to design 3-input XOR for GF180MCU 9 tracks and/or 12 tracks to expand the library. 
 We chose XOR because we are familiar with its use as a parity bit generator. 
 
+## XOR 3
+### Drive Strength: 1X
+### Track: 9 tracks
+### VDD: 3.3 V
+
+## Target Specs
+Area: < 80 μm2
+Input Capacitance: < 0.0075 pF
+Delay: < 1.0 ns
+Output Load: < 0.001 pF
+Dynamic Energy: < 0.4 uW/MHz
+Leakage Power: < 0.25 nW
+
+## Referred to the existing cells’ specs below:
+https://github.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_sc_mcu7t5v0/blob/main/cells/xor2/gf180mcu_fd_sc_mcu7t5v0__xor2_1.rst
+https://github.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_sc_mcu7t5v0/blob/main/cells/xor3/gf180mcu_fd_sc_mcu7t5v0__xor3_1.rst
+https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/blob/main/gf180mcu_osu_sc_gp9t3v3/cells/xor2/gf180mcu_osu_sc_gp9t3v3__xor2_1.lib
+
+
 ## Objectives 
 1. Perform a schematic design using the pull-up and pull-down network methods.
 functions obtained from the minterm of three XOR inputs.
@@ -40,3 +59,5 @@ key of indicator succes : still on going
 ### Week 5 : 20 August - 5 September Integration and Verification 
 method : still on going 
 key of indicator succes : synthesis succesfully and measureable in timing and size of transistor 
+
+
